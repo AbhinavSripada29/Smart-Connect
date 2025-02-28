@@ -1,0 +1,178 @@
+/* 🌟 General Styles */
+.dashboard-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-container {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  margin-top: 80px; /* Adjust for fixed header */
+}
+
+/* 📌 Main Content */
+.dashboard-content {
+  margin-left: 250px;
+  width: 100%;
+  padding: 20px;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+.dashboard-content h1, .dashboard-content h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* 📅 Appointments List */
+.appointments-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* 📌 Appointment Card */
+.appointment-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  border-left: 5px solid #007bff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.appointment-card:hover {
+  transform: scale(1.02);
+}
+
+.appointment-card h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.appointment-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* 🟢 Status-Based Card Styles */
+.ongoing {
+  background: #fff3cd;
+  border-left: 5px solid #ffcc00;
+}
+
+.pre-ongoing {
+  background: #ffe0b2;
+  border-left: 5px solid #ff9800;
+}
+
+.completed {
+  background: #d4edda;
+  border-left: 5px solid #28a745;
+}
+
+/* ✅ Accept Button */
+.accept-btn {
+  background: #28a745;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.accept-btn:hover {
+  background: #218838;
+}
+
+/* ❌ Reject Button */
+.reject-btn {
+  background: #dc3545;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.reject-btn:hover {
+  background: #c82333;
+}
+
+/* 🟡 Decision Buttons */
+.decision-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.yes-btn {
+  background: #007bff;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.yes-btn:hover {
+  background: #0056b3;
+}
+
+.no-btn {
+  background: #6c757d;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.no-btn:hover {
+  background: #5a6268;
+}
+
+/* 🛑 No Appointments */
+.no-appointments {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+    margin-top: 70px;
+  }
+
+  .dashboard-content {
+    margin-left: 0;
+  }
+
+  .appointments-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .appointment-card {
+    width: 90%;
+  }
+}

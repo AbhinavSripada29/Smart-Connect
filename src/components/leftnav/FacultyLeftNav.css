@@ -1,0 +1,74 @@
+/* Sidebar Container */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #1E1E2F; /* Dark blue-gray theme */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Sidebar Header */
+  .sidebar-header {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 12px 0;
+    width: 100%;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    letter-spacing: 1px;
+  }
+  
+  .sidebar-header h2 {
+    color: #FFFFFF;
+  }
+  
+  /* Navigation Menu */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  nav ul li {
+    width: 100%;
+  }
+  
+  nav ul li a {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 14px 20px;
+    width: 100%;
+    font-size: 1.1rem;
+    transition: background 0.3s ease-in-out, border-left 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Sidebar Icons */
+  .icon {
+    font-size: 1.4rem;
+    margin-right: 12px;
+  }
+  
+  /* Hover and Active Link */
+  nav ul li a:hover {
+    background: #2A2A40; /* Subtle dark hover */
+    border-left: 5px solid #FFD700; /* Golden yellow highlight */
+    font-weight: bold;
+  }
+  
+  nav ul li a.active {
+    background: #FFD700; /* Active link golden */
+    color: #ffea2f; /* Dark blue text */
+    font-weight: bold;
+    border-left: 5px solid white;
+  }
+  

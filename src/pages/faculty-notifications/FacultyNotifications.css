@@ -1,0 +1,121 @@
+/* 🔔 Faculty Notifications - Modern UI */
+.dashboard-page {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding-top: 80px; /* Ensures content is not covered by header */
+}
+
+/* Header Styling - Fixed Position */
+.logged-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Main Layout */
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    margin-top: 0; /* Ensures no extra space at the top */
+    padding-top: 20px;
+}
+
+/* Left Sidebar (Navigation) */
+.faculty-left-nav {
+    width: 250px;
+    min-height: calc(100vh - 80px);
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 20px;
+    top: 100px;
+}
+
+/* Main Content */
+.dashboard-content {
+    flex-grow: 1;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 280px; /* Adjust for sidebar */
+}
+
+/* 🛎️ Header Styling */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* 🔔 Notification List */
+.notifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* 📌 Notification Card */
+.notification-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    border-left: 5px solid #007bff; /* Blue Theme */
+}
+
+.notification-card:hover {
+    transform: translateY(-2px);
+}
+
+/* ⚠️ Urgent Notification Styling */
+.urgent {
+    border-left: 5px solid #dc3545; /* Red for urgency */
+    background: #fff5f5;
+}
+
+.urgent-alert {
+    color: #dc3545;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ℹ️ General Text */
+p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+p strong {
+    color: #333;
+}
+
+/* ⏳ Loading State */
+.loading {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+}
+
+/* 📭 No Notifications */
+.no-notifications {
+    font-size: 18px;
+    color: #777;
+    text-align: center;
+    margin-top: 20px;
+}

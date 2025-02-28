@@ -1,0 +1,141 @@
+.student-connect-container {
+    display: flex;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #2c3e50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  
+  .sidebar-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  nav ul li {
+    width: 100%;
+  }
+  
+  nav ul li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 1.1rem;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    background: #34495e;
+    border-left: 5px solid #007bff;
+  }
+  
+  /* Faculty Connect Content */
+  .faculty-connect-content {
+    margin-left: 260px;
+    padding: 40px;
+    width: 100%;
+    background: #f4f6f9;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  /* 🔍 Search & Filter Section */
+  .search-filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .search-bar, .filter-dropdown {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 250px;
+  }
+  
+  .filter-dropdown {
+    cursor: pointer;
+  }
+  
+  /* 🎓 Faculty Cards */
+  .faculty-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .faculty-card {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .faculty-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* 👨‍🏫 Faculty Avatar */
+  .faculty-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  /* 📩 Request Slot Button */
+  .request-slot-btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .request-slot-btn:hover {
+    background: #0056b3;
+  }
+  
+  /* No Results */
+  .no-results {
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: 20px;
+  }
+  

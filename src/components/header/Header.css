@@ -1,0 +1,75 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #f9f9f9;
+  padding: 0 50px;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.logo {
+  cursor: pointer; /* Makes the text clickable */
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo h1:hover {
+  transform: scale(1.05);
+  color: #5a67d8;
+}
+
+/* Login Button */
+.login {
+  display: flex;
+  align-items: center;
+}
+
+.login-button {
+  margin-right: 80px;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 8px;
+  background-color: #5a67d8;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #4c51bf;
+  transform: scale(1.05);
+}
+
+.login-button:active {
+  transform: scale(0.95);
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 20px;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .login-button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}

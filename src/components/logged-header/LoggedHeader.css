@@ -1,0 +1,93 @@
+.logged-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #f9f9f9;
+    padding: 0 50px;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logo Styling */
+  .logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #222;
+    margin: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo h1:hover {
+    transform: scale(1.05);
+    color: #5a67d8;
+  }
+  
+  /* Right Side (Profile & Logout) */
+  .header-right {
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+  }
+  
+  /* Profile Button */
+  .profile-button {
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 8px;
+    background-color: #5a67d8;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 15px;
+  }
+  
+  .profile-button:hover {
+    background-color: #4c51bf;
+    transform: scale(1.05);
+  }
+  
+  /* Logout Button */
+  .logout-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color: #e53e3e;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #c53030;
+    transform: scale(1.05);
+  }
+  
+  .logout-button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .logged-header {
+      padding: 0 20px;
+    }
+  
+    .logo h1 {
+      font-size: 1.5rem;
+    }
+  
+    .profile-button,
+    .logout-button {
+      padding: 10px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,172 @@
+/* General Styles */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fd;
+    font-family: "Poppins", sans-serif;
+    padding-top: 40px; /* Adjust for fixed header */
+}
+
+/* Registration Box Layout */
+.register-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 750px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Input Fields */
+.input-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-group input:focus, .input-group select:focus {
+    border-color: #4c5fd5;
+    box-shadow: 0 0 8px rgba(76, 95, 213, 0.2);
+}
+
+/* Role Selection Dropdown */
+.input-group select {
+    background-color: white;
+}
+
+/* Checkbox Styling */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+}
+
+.checkbox-group input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.checkbox-group a {
+    color: #4c5fd5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.checkbox-group a:hover {
+    text-decoration: underline;
+}
+
+/* Register Button */
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #4c5fd5;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.register-btn:hover {
+    background-color: #3748a3;
+    transform: scale(1.05);
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Login Link */
+.login-link {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.login-link a {
+    color: #4c5fd5;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+    color: #3748a3;
+}
+
+/* Image Section */
+.image-section {
+    flex: 1;
+    text-align: center;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 250px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .register-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        padding: 30px;
+    }
+
+    .form-section {
+        padding-right: 0;
+    }
+
+    .image-section {
+        margin-top: 20px;
+    }
+
+    .image-section img {
+        width: 80%;
+    }
+}
