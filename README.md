@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# 🎓 Smart Student-Faculty Interaction & Appointment System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Overview  
+The **Smart Student-Faculty Interaction & Appointment System** is a **web-based solution** designed to simplify and optimize faculty-student meetings. Built using **React.js and Firebase**, this system allows students to request appointments with faculty members, while faculty can manage, accept, and track the status of their meetings in real-time.
 
-## Available Scripts
+## 🚀 Features  
+✅ **Student Appointment Requests** – Students can request appointments with faculty members.  
+✅ **Faculty Dashboard** – Faculty can view, accept, and manage appointment requests.  
+✅ **Appointment Status Tracking** – Appointments progress through different stages: `Pending → Accepted → Pre-Ongoing → Ongoing → Completed`.  
+✅ **Mark Attendance** – Faculty can mark student attendance (`Attended` or `Not Attended`).  
+✅ **Firebase Integration** – Secure **Firestore Database** stores all appointment records.  
+✅ **Modern UI** – Clean and responsive design using **React.js** and **CSS**.  
 
-In the project directory, you can run:
+## 🛠️ Tech Stack  
+- **Frontend:** React.js, Zustand (for state management)  
+- **Backend:** Firebase Firestore (NoSQL database)  
+- **Authentication:** Firebase Authentication  
+- **Styling:** CSS  
 
-### `npm start`
+## 📷 Screenshots  
+(Include relevant UI screenshots of your app here)  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📦 Installation & Setup  
+1️⃣ **Clone the Repository:**  
+```bash
+git clone https://github.com/yourusername/student-faculty-appointment-system.git
+cd student-faculty-appointment-system
