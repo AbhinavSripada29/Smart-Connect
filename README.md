@@ -17,11 +17,9 @@ The **Smart Student-Faculty Interaction & Appointment System** is a **web-based 
 - **Authentication:** Firebase Authentication  
 - **Styling:** CSS  
 
-## 📷 Screenshots  
-(Include relevant UI screenshots of your app here)  
 
 ## 📦 Installation & Setup  
 1️⃣ **Clone the Repository:**  
 ```bash
-git clone https://github.com/yourusername/student-faculty-appointment-system.git
+git clone https://github.com/AbhinavSripada29/Smart-Connect
 cd student-faculty-appointment-system
